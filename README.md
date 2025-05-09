@@ -36,57 +36,60 @@ The project utilizes a publicly available dataset of **1.45 million Coursera cou
 ```
 
 ## Installation
+
 Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/mooc-absa.git
-   cd mooc-absa
-   
-```
+
+    ```bash
+    git clone https://github.com/your-username/mooc-absa.git
+    cd mooc-absa
+    ```
 
 2. **Create a Virtual Environment and Install Dependencies**:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   
-```
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
 
-3. **Prepare the Dataset**:
-   Ensure `cleaned_reviews.csv` is placed in the `data/` directory.
+3. **Prepare the Dataset**:  
+    Ensure `cleaned_reviews.csv` is placed in the `data/` directory.
+
+---
 
 ## Usage
+
 Run the following commands to use the system:
 
-1. **Preprocess the Data**:
+1. **Preprocess the Data**  
    Clean and prepare the dataset:
-   ```bash
-   python src/preprocessing.py
-   
-```
 
-2. **Extract Aspects**:
+    ```bash
+    python src/preprocessing.py
+    ```
+
+2. **Extract Aspects**  
    Identify key aspects from the reviews:
-   ```bash
-   python src/aspect_extraction.py
-   
-```
 
-3. **Perform Sentiment Analysis**:
+    ```bash
+    python src/aspect_extraction.py
+    ```
+
+3. **Perform Sentiment Analysis**  
    Classify sentiments for extracted aspects:
-   ```bash
-   python src/sentiment_analysis.py
-   
-```
 
-4. **Launch the Streamlit Dashboard**:
+    ```bash
+    python src/sentiment_analysis.py
+    ```
+
+4. **Launch the Streamlit Dashboard**  
    Visualize results interactively:
-   ```bash
-   streamlit run src/dashboard.py
-   
-```
+
+    ```bash
+    streamlit run src/dashboard.py
+    ```
 
    The dashboard provides:
    - Aspect filtering.
