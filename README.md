@@ -27,7 +27,7 @@ The project utilizes a publicly available dataset of **1.45 million Coursera cou
 │   ├── preprocessing.py        # Data cleaning and preprocessing script
 │   ├── aspect_extraction.py    # Aspect extraction using SpaCy, RAKE, Word2Vec
 │   ├── sentiment_analysis.py   # Sentiment classification (rule-based and supervised)
-│   └── dashboard.py            # Streamlit dashboard implementation
+│   └── Streamlit.py            # Streamlit dashboard implementation
 ├
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
