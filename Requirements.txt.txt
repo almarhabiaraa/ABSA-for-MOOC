@@ -1,0 +1,17 @@
+numpy
+pandas
+spacy
+nltk
+tqdm
+rake-nltk
+gensim
+textblob
+scikit-learn
+imblearn
+xgboost
+lightgbm
+catboost
+transformers
+torch
+datasets
+accelerate
