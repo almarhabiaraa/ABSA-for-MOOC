@@ -22,7 +22,7 @@ The project utilizes a publicly available dataset of **1.45 million Coursera cou
 ## Repository Structure
 ```
 ├── data/
-│   └── Coursera_Reviews.csv      # Link to Dataset
+│   └── Coursera_Reviews.csv    # Link to Dataset
 ├── src/
 │   ├── preprocessing.py        # Data cleaning and preprocessing script
 │   ├── aspect_extraction.py    # Aspect extraction using SpaCy, RAKE, Word2Vec
