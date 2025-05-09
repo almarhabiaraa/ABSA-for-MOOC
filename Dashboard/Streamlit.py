@@ -2,9 +2,19 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
+import gdown
 
-# Load the data
-df = pd.read_csv("aspect_sentiment_dataset.csv")
+
+dataset_path = "aspect_sentiment_dataset.csv"
+
+# Download only if not already downloaded
+if not os.path.exists(dataset_path):
+    url = "https://drive.google.com/uc?id=1n-Nv39QKVpi8FTF4WEB9iB76SpDybTEa"
+    gdown.download(url, dataset_path, quiet=False)
+
+# Load the dataset into a DataFrame
+df = pd.read_csv(dataset_path)
 
 st.set_page_config(page_title="Aspect-Based Sentiment Analysis for MOOCs", layout="wide")
 
