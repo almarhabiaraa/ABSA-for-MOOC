@@ -18,19 +18,17 @@ The project utilizes a publicly available dataset of **1.45 million Coursera cou
 - **Rating**: Numeric ratings provided by reviewers.
 - **Course_id**: Unique identifiers for courses.
 
-The cleaned dataset is stored as `cleaned_reviews.csv`.
 
 ## Repository Structure
 ```
 ├── data/
-│   └── cleaned_reviews.csv      # Cleaned dataset
+│   └── Coursera_Reviews.csv      # Link to Dataset
 ├── src/
 │   ├── preprocessing.py        # Data cleaning and preprocessing script
 │   ├── aspect_extraction.py    # Aspect extraction using SpaCy, RAKE, Word2Vec
 │   ├── sentiment_analysis.py   # Sentiment classification (rule-based and supervised)
 │   └── dashboard.py            # Streamlit dashboard implementation
-├── models/
-│   └── trained_models/         # Pre-trained model files (e.g., Logistic Regression, BERT)
+├
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 └── LICENSE                     # License file
@@ -48,6 +46,7 @@ Follow these steps to set up the project locally:
 ```
 
 2. **Create a Virtual Environment and Install Dependencies**:
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
